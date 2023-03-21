@@ -1,0 +1,112 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calculator {
+    background-color: #333;
+    width: 320px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #000;
+  }
+  
+  .display {
+    background-color: #222;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 70px;
+  }
+  
+  .display input[type="text"] {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 40px;
+    text-align: right;
+    width: 100%;
+  }
+  
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .key {
+    background-color: #444;
+    color: #fff;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .key:hover {
+    background-color: #666;
+  }
+  
+  .clear {
+    grid-column: 1 / span 2;
+  }
+  
+  .equal {
+    background-color: #f39c12;
+    color: #fff;
+    grid-column: 3 / span 2;
+  }
+  
+  .equal:hover {
+    background-color: #e67e22;
+  }
+  
+  .key.function {
+    background-color: #555;
+  }
+  
+  .key.operator {
+    background-color: #f39c12;
+    color: #000;
+  }
+  
+  .key.number {
+    background-color: #ccc;
+    color: #000;
+  }
+  
+  .key.big {
+    font-size: 40px;
+    grid-column: 1 / span 2;
+  }
+  
+  .key.big:hover {
+    background-color: #666;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .calculator {
+      width: 250px;
+    }
+    
+    .key {
+      font-size: 24px;
+      padding: 10px;
+    }
+    
+    .key.big {
+      font-size: 30px;
+    }
+    
+    .display input[type="text"] {
+      font-size: 30px;
+    }
+  }
+  

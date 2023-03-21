@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="calculator">
+		<div class="display">
+		  <input type="text" id="result" readonly>
+		</div>
+		<div class="keys">
+		  <input type="button" value="C" class="key clear" onclick="clearResult('')">
+		  <input type="button" value="÷" class="key operator" onclick="addInput('/')">
+		  <input type="button" value="×" class="key operator" onclick="addInput('*')">
+		  <input type="button" value="7" class="key number" onclick="addInput('7')">
+		  <input type="button" value="8" class="key number" onclick="addInput('8')">
+		  <input type="button" value="9" class="key number" onclick="addInput('9')">
+		  <input type="button" value="−" class="key operator" onclick="addInput('-')">
+		  <input type="button" value="4" class="key number" onclick="addInput('4')">
+		  <input type="button" value="5" class="key number" onclick="addInput('5')">
+		  <input type="button" value="6" class="key number" onclick="addInput('6')">
+		  <input type="button" value="+" class="key operator" onclick="addInput('+')">
+		  <input type="button" value="1" class="key number" onclick="addInput('1')">
+		  <input type="button" value="2" class="key number" onclick="addInput('2')">
+		  <input type="button" value="3" class="key number" onclick="addInput('3')">
+		  <input type="button" value="AC" class="key operator" onclick="clearResult('')">
+		  <input type="button" value="0" class="key number" onclick="addInput('0')">
+		  <input type="button" value="." class="key number" onclick="addInput('.')">
+		  <input type="button" value="=" class="key equal" onclick="calculate()">
+		</div>
+	  </div>
+
+	<script src="script.js"></script>
+</body>
+</html>
